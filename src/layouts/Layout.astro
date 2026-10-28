@@ -1,6 +1,5 @@
 ---
 import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import { SITE_DATA } from '../constants';
 
 import '../styles/global.css';
@@ -45,7 +44,6 @@ const title = `${SITE_DATA.name}${pageTitle ? ` | ${pageTitle}` : ""}`;
 		<main>
 			<slot />
 		</main>
-		<Footer />
 		<script>
 		  import "../scripts/menu.js";
 		</script>
